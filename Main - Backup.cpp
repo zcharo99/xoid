@@ -120,7 +120,7 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
     CleanupDeviceD3D();
     DestroyWindow(main_hwnd);
     UnregisterClass(wc.lpszClassName, wc.hInstance);
-    
+
     return 0;
 }
 
