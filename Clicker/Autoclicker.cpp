@@ -21,14 +21,6 @@ void clicker_event()
 
 		Sleep(Randomization() * 1.23);
 	}
-	else if (clicker::C_inMinecraft == false)
-	{
-		PostMessage(GetForegroundWindow(), WM_LBUTTONDOWN, MK_RBUTTON, MAKELPARAM(0, 0));
-		Sleep(23);
-		PostMessage(GetForegroundWindow(), WM_LBUTTONUP, MK_RBUTTON, MAKELPARAM(0, 0));
-
-		Sleep(Randomization() * 1.23);
-	}
 }
 
 void autoclicker()
