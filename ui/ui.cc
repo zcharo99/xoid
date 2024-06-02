@@ -18,8 +18,6 @@ void ui::render() {
 		// placeholder blatant
 		ImGui::Checkbox("Blatant", &clicker::C_blatant);
 		ImGui::Separator();
-		ImGui::Checkbox("Only on Minecraft", &clicker::C_inMinecraft);
-		ImGui::Separator();
 		ImGui::Checkbox("Credits", &other::credits_display);
 		if (other::credits_display == true)
 		{
