@@ -9,7 +9,6 @@ namespace other {
 namespace clicker {
 	inline bool C_blatant;
 	inline bool C_toggle;
-	inline bool C_inMinecraft;
 	inline int CPS = 1;
 	inline int C_maxcps = 20;
 	inline int C_mincps = 1;
