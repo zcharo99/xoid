@@ -11,8 +11,7 @@ float Randomization()
 
 void clicker_event()
 {
-	if (clicker::C_inMinecraft)
-		if (GetForegroundWindow() == FindWindow(("LWJGL"), NULL))
+	if (GetForegroundWindow() == FindWindow(("LWJGL"), NULL))
 	if (clicker::C_toggle)
 	if (mouseDown)
 	{
