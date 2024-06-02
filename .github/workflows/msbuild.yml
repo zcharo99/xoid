@@ -48,4 +48,4 @@ jobs:
       with:
         name: xoid
         path: |
-          .
+          .\x64\Release\*.exe
