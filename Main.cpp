@@ -9,7 +9,7 @@ int APIENTRY WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
     // Create application window
     WNDCLASSEX wc = { sizeof(WNDCLASSEX), CS_CLASSDC, WndProc, 0L, 0L, GetModuleHandle(NULL), NULL, NULL, NULL, NULL, ui::window_title, NULL };
     RegisterClassEx(&wc);
-    main_hwnd = CreateWindow(wc.lpszClassName, ui::window_title, WS_OVERLAPPEDWINDOW | WS_VISIBLE, 0, 0, 5, 5, NULL, NULL, wc.hInstance, NULL);
+    main_hwnd = CreateWindow(wc.lpszClassName, ui::window_title, WS_POPUP, 0, 0, 5, 5, NULL, NULL, wc.hInstance, NULL);
     if (!main_hwnd) MessageBox(NULL, "Failed to create window", "Error", MB_ICONERROR);
 
     // Initialize Direct3D
