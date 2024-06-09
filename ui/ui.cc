@@ -15,6 +15,7 @@ void ui::render() {
 		ImGui::BulletText("Xoid");
 		ImGui::Checkbox("Enabled", &clicker::C_toggle);
 		ImGui::SliderInt("CPS", &clicker::CPS, 1, clicker::C_maxcps);
+		if (ImGui::IsKeyPressed(VK_F7)) clicker::C_toggle = !clicker::C_toggle;
 		// placeholder blatant
 		ImGui::Checkbox("Blatant", &clicker::C_blatant);
 		ImGui::Separator();
